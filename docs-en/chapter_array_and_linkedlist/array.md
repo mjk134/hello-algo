@@ -12,15 +12,15 @@ Arrays can be initialized in two ways depending on the needs: either without ini
 
 === "Python"
 
-    ```python title="array.py"
+```python title="array.py"
     # Initialize array
     arr: list[int] = [0] * 5  # [ 0, 0, 0, 0, 0 ]
     nums: list[int] = [1, 3, 2, 5, 4]
-    ```
+```
 
 === "C++"
 
-    ```cpp title="array.cpp"
+```cpp title="array.cpp"
     /* Initialize array */
     // Stored on stack
     int arr[5];
@@ -28,90 +28,90 @@ Arrays can be initialized in two ways depending on the needs: either without ini
     // Stored on heap (manual memory release needed)
     int* arr1 = new int[5];
     int* nums1 = new int[5] { 1, 3, 2, 5, 4 };
-    ```
+```
 
 === "Java"
 
-    ```java title="array.java"
+```java title="array.java"
     /* Initialize array */
     int[] arr = new int[5]; // { 0, 0, 0, 0, 0 }
     int[] nums = { 1, 3, 2, 5, 4 };
-    ```
+```
 
 === "C#"
 
-    ```csharp title="array.cs"
+```csharp title="array.cs"
     /* Initialize array */
     int[] arr = new int[5]; // [ 0, 0, 0, 0, 0 ]
     int[] nums = [1, 3, 2, 5, 4];
-    ```
+```
 
 === "Go"
 
-    ```go title="array.go"
+```go title="array.go"
     /* Initialize array */
     var arr [5]int
     // In Go, specifying the length ([5]int) denotes an array, while not specifying it ([]int) denotes a slice.
     // Since Go's arrays are designed to have compile-time fixed length, only constants can be used to specify the length.
     // For convenience in implementing the extend() method, the Slice will be considered as an Array here.
     nums := []int{1, 3, 2, 5, 4}
-    ```
+```
 
 === "Swift"
 
-    ```swift title="array.swift"
+```swift title="array.swift"
     /* Initialize array */
     let arr = Array(repeating: 0, count: 5) // [0, 0, 0, 0, 0]
     let nums = [1, 3, 2, 5, 4]
-    ```
+```
 
 === "JS"
 
-    ```javascript title="array.js"
+```javascript title="array.js"
     /* Initialize array */
     var arr = new Array(5).fill(0);
     var nums = [1, 3, 2, 5, 4];
-    ```
+```
 
 === "TS"
 
-    ```typescript title="array.ts"
+```typescript title="array.ts"
     /* Initialize array */
     let arr: number[] = new Array(5).fill(0);
     let nums: number[] = [1, 3, 2, 5, 4];
-    ```
+```
 
 === "Dart"
 
-    ```dart title="array.dart"
+```dart title="array.dart"
     /* Initialize array */
     List<int> arr = List.filled(5, 0); // [0, 0, 0, 0, 0]
     List<int> nums = [1, 3, 2, 5, 4];
-    ```
+```
 
 === "Rust"
 
-    ```rust title="array.rs"
+```rust title="array.rs"
     /* Initialize array */
     let arr: Vec<i32> = vec![0; 5]; // [0, 0, 0, 0, 0]
     let nums: Vec<i32> = vec![1, 3, 2, 5, 4];
-    ```
+```
 
 === "C"
 
-    ```c title="array.c"
+```c title="array.c"
     /* Initialize array */
     int arr[5] = { 0 }; // { 0, 0, 0, 0, 0 }
     int nums[5] = { 1, 3, 2, 5, 4 };
-    ```
+```
 
 === "Zig"
 
-    ```zig title="array.zig"
+```zig title="array.zig"
     // Initialize array
     var arr = [_]i32{0} ** 5; // { 0, 0, 0, 0, 0 }
     var nums = [_]i32{ 1, 3, 2, 5, 4 };
-    ```
+```
 
 ### Accessing Elements
 
